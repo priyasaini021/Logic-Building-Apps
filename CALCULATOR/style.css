@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+}
+
+/* Calculator */
+.cal {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 20px;
+  width: 330px;
+  box-shadow: 
+    8px 8px 20px rgba(0,0,0,0.6),
+    -8px -8px 20px rgba(255,255,255,0.05);
+}
+
+/* Heading */
+#heading {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 15px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* Display */
+#display {
+  width: 100%;
+  height: 75px;
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 30px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background: #0f172a;
+  color: #38bdf8;
+  box-shadow: inset 4px 4px 10px rgba(0,0,0,0.6),
+              inset -4px -4px 10px rgba(255,255,255,0.05);
+}
+
+/* Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Buttons */
+.btn {
+  height: 60px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #e2e8f0;
+  background: #1e293b;
+  box-shadow: 
+    4px 4px 10px rgba(0,0,0,0.6),
+    -4px -4px 10px rgba(255,255,255,0.05);
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    6px 6px 15px rgba(0,0,0,0.7),
+    -6px -6px 15px rgba(255,255,255,0.06);
+}
+
+/* Click */
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: inset 3px 3px 8px rgba(0,0,0,0.6),
+              inset -3px -3px 8px rgba(255,255,255,0.05);
+}
+
+/* Operators */
+.btn:nth-child(4n) {
+  background: #f59e0b;
+  color: white;
+}
+
+/* Equal */
+.btn:nth-child(15) {
+  background: #22c55e;
+  color: white;
+  grid-column: span 2;
+}
+
+.btn:nth-child(18) {
+    background: #ef4444;
+    color: white;
+    grid-column: span 2;
+}
+
+/* Clear */ 
+ .btn:last-child {
+  background: rgb(228, 95, 12);
+  color: white;
+  grid-column: span 2; 
+}
+
