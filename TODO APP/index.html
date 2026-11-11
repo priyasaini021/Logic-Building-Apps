@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!--sidebar-->
+        <aside class="sidebar">
+            <h2>TaskFlow</h2>
+ <nav>
+    <a href="#">All Tasks</a>
+
+    <a href="#">Today</a>
+
+    <a href="#">Upcoming</a>
+
+    <a href="#">Completed</a>
+</nav>
+        </aside>
+
+        <!--Main Content-->
+        <main class="main content">
+            <header>
+                <h1>My Tasks</h1>
+                <p>Organize your day and stay productive</p>
+            </header>
+
+            <!--add task-->
+            <div class="task-Input">
+                <input type="text" id="taskInput" placeholder="what needs to be done?">
+                <button id="addTaskBtn">+ Add Task</button>
+            </div>
+
+            <!--Task List-->
+            <div class="taskList" id="taskList"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
